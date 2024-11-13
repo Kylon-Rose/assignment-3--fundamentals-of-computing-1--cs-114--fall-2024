@@ -10,4 +10,13 @@ public class Matrix {
     Matrix = new int[Dimension][Dimension];
     System.out.println("Dimensions of Matrix" + Dimension + "x" + Dimension + ":");
   }
+// Populates Matrix
+  public void populateMatrix() {
+    int input = 1;
+    for (int Row = 0; Row < Dimension; Row++) {
+      for (int Column = 0; Column < Dimension; Column++) {
+        Matrix[Row][Column] = input++;
+      }
+    }
+  }
 }
