@@ -45,4 +45,13 @@ public class Matrix {
       System.out.println();
     }
   }
+// Flips Matrix.
+  public void flipMatrix() {
+    int input = Dimension * Dimension;
+    for (int Row = 0; Row < Dimension; Row++) {
+      for (int Column = 0; Column < Dimension; Column++) {
+        Matrix[Row][Column] =  input--;
+      }
+    }
+  }
 }
