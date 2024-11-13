@@ -32,4 +32,17 @@ public class Matrix {
       System.out.println();
     }
   }
+// Print's 0's.
+  public void printDefaultValues() {
+    for (int Row = 0; Row < Dimension; Row++) {
+      for (int Column = 0; Column < Dimension; Column++) {
+        if (Row + Column == Dimension - 1) {
+          System.out.print(YELLOW + 0 + RESET + "\t");
+        } else {
+          System.out.print(0 + "\t");
+        }
+      }
+      System.out.println();
+    }
+  }
 }
