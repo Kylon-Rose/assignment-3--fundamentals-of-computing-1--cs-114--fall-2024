@@ -19,4 +19,17 @@ public class Matrix {
       }
     }
   }
+// Prints Matrix
+  public void printMatrix() {
+    for (int Row = 0; Row < Dimension; Row++) {
+      for (int Column = 0; Column < Dimension; Column++) {
+        if (Row + Column == Dimension - 1) {
+          System.out.print(YELLOW + Matrix[Row][Column] + RESET + "\t");
+        } else {
+          System.out.print(Matrix[Row][Column] + "\t");
+        }
+      }
+      System.out.println();
+    }
+  }
 }
